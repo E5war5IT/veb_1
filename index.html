@@ -22,9 +22,10 @@
             <video src="веб_видео/video_video/video_1.MP4" controls name="media" width="800" height="400">
             </video>
 
-            <a href="../веб_видео/image/бет.png" download="" title="видеофайл" id="submit">
-                Download
-            </a>
+            <form method="get" action="../веб_видео/image/бет.png">
+                <button type="submit">Download!</button>
+            </form>
+   
 
         </div>
     </div>
@@ -58,6 +59,12 @@
         let img = new Image();
         img.src = '../веб_видео/image/бет.png' ;
     };
+    
+    /*
+             <a href="../веб_видео/image/бет.png" download="" title="видеофайл" id="submit">
+                Download
+            </a>
+       */
 </script>
 </body>
 </html>
