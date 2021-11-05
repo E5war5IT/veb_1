@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://ags-studio.ru/coffee444/images/Video-how-to-icon.png">
+    <meta name="theme-color" content="#424242">
+    <title>Видео</title>
+    <link rel="apple-touch-icon" href="https://ags-studio.ru/coffee444/images/Video-how-to-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://ags-studio.ru/coffee444/images/Video-how-to-icon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://ags-studio.ru/coffee444/images/Video-how-to-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://ags-studio.ru/coffee444/images/Video-how-to-icon.png">
+</head>
+<body>
+    <div id="header" class="navbar">
+        <p id="text_video">Видео</p>
+    </div>
+    <div id="container">
+        <div id="vi">
+
+            <video src="веб_видео/video_video/video_1.MP4" controls name="media" width="800" height="400">
+            </video>
+
+            <a href="../веб_видео/image/бет.png" download="" title="видеофайл" id="submit">
+                Download
+            </a>
+
+        </div>
+    </div>
+    <div id="footer" class="block"></div>
+    <style>
+    #submit{background: #424242; border: 1px; position: relative; left: 250px;  height: 30px; font-size: 15pt;
+     margin-top: 10px; border-radius: 2px;}
+    #header{background: #424242; height: 80px; width:100%; position: sticky;}
+    #text_video{font-size: 50pt;}
+    #container{background: lightgray; margin-top: 50px; height: 458px; border-radius: 5px; 
+    margin-bottom:50px; left: 400px; position:fixed;  width: 808px; }
+    #vi{position: relative; left:4px; top:4px;}
+    #text_video{width: 180px; margin-left: 150px; font-weight: 400; font-stretch: normal; font-style: oblique;}
+    #footer{background-color: #212121; height: 100px; position:fixed; bottom:0; min-width:78px; max-width: 100px; }
+    .block{ min-height: 100%;}
+    .navbar{ min-width: 100%;}
+    *{margin: 0px;}
+    </style>
+<script>
+    document.getElementById('submit').onmousemove = function(){ 
+        return this.value = 'скачать,если видео не отображается'; 
+        return document.getElementById('submit').style.width = '150px';
+    };
+    document.getElementById('submit').onmouseout = function(){ 
+        return this.value = 'скачать';
+        return document.getElementById('submit').style.width = '105px';
+    };
+    document.getElementById('submit').onclick = function(){ 
+        return this.value = 'скачать';
+        return document.getElementById('submit').style.width = '105px';
+        let img = new Image();
+        img.src = '../веб_видео/image/бет.png' ;
+    };
+</script>
+</body>
+</html>
