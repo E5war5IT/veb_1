@@ -66,19 +66,19 @@
             </a>
        */
     function onStartedDownload(id) {
-    console.log(`Started downloading: ${id}`);
+        console.log(`Started downloading: ${id}`);
     }
 
     function onFailed(error) {
-    console.log(`Download failed: ${error}`);
+        console.log(`Download failed: ${error}`);
     }
 
     var downloadUrl = "image/бет.png";
 
-    var downloading = browser.downloads.download({
-        url : downloadUrl,
-        filename : 'my-image-again.png',
-        conflictAction : 'uniquify'
+    var downloading = document.getElementById('submit').downloads.download({
+        url: downloadUrl,
+        filename: 'my-image-again.png',
+        conflictAction: 'uniquify'
     });
 
     downloading.then(onStartedDownload, onFailed);
