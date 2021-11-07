@@ -19,18 +19,13 @@
     <div id="container">
         <div id="vi">
 
-            <video src="веб_видео/video_video/video_1.MP4" controls name="media" width="800" height="400">
+            <video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload" 
+            src="../веб_видео/video_video/video_1.avi" height="400px" width="800px">
             </video>
 
-            <input type="button" id="submit" value="Download">
-            <script>
-    
-                  document.getElementById("submit").addEventListener("click", function (){
-                              var file = new Image();
-                              file.src = "image/бет.png" ;
-                              download(filename);
-                        }, false);
-            </script>
+              <a href="../веб_видео/video_video/video_1.avi" download="" title="видеофайл" id="submit">
+                Download
+            </a>
             
 
         </div>
